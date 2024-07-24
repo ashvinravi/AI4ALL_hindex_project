@@ -120,5 +120,5 @@ plt8 = ggplot(data = residual_df, aes(x = citation_number, y = residuals)) +
 d = d %>%
   mutate(prediction_residuals = l3$residuals)
 
-write.csv(d, file = "gscholar_profiles_with_residuals.csv", 
-          quote = FALSE, row.names = FALSE)
+write.csv(d, file = "gscholar_profiles_with_residuals.csv",
+          quote = TRUE, row.names = FALSE)
